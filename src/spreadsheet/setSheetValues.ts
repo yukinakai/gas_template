@@ -10,6 +10,7 @@ function setSheetValues(
   while (retries < 3) {
     try {
       worksheet.getRange(row, column, numRows, numColumns).setValues(setData);
+      break;
     } catch (e) {
       retries++;
       if (retries === 3) throw e;
