@@ -1,0 +1,18 @@
+{
+  "name": "sales_department_management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "push:prod": "node changeScriptId.cjs prod && clasp push -A ~/.clasprc.json && node resetScriptId.cjs",
+    "push:stg": "node changeScriptId.cjs stg && clasp push -A ~/.clasprc.json && node resetScriptId.cjs",
+    "pull:prod": "node changeScriptId.cjs prod && clasp pull -A ~/.clasprc.json && node resetScriptId.cjs",
+    "pull:stg": "node changeScriptId.cjs stg && clasp pull -A ~/.clasprc.json && node resetScriptId.cjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.59",
+    "dotenv": "^16.0.3"
+  }
+}
