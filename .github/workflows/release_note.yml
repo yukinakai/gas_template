@@ -1,0 +1,19 @@
+name: Create Release Note
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Release Tag And Note
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: release-drafter/release-drafter@v5
+        with:
+          tag_name: ${{ github.ref }}
+          nname: Release ${{ github.ref }}
+          publish: true
