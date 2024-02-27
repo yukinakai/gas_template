@@ -17,8 +17,8 @@ jobs:
           TZ: 'Asia/Tokyo'
       - name: Create Tag
         run: |
-          git config --local user.email "$USER_EMAIL"
-          git config --local user.name "$USER_NAME"
+          git config --local user.email "10libra20.y@gmail.com"
+          git config --local user.name "yukinakai"
           git tag "v${{ env.CURRENT_DATETIME }}"
           git push origin "v${{ env.CURRENT_DATETIME }}"
         env:
