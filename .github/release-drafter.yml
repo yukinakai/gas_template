@@ -1,18 +1,6 @@
 name-template: "v$RESOLVED_VERSION"
 tag-template: "v$RESOLVED_VERSION"
 
-categories:
-  - title: "💪 Features"
-    labels:
-      - "feature"
-  - title: "🚀 Enhancement"
-    labels:
-      - "enhancement"
-  - title: "🚨 Bug Fixes"
-    labels:
-      - "bug"
-  - title: "🔄 その他の変更"
-
 change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 
 change-title-escapes: '\<*_&#`@'
