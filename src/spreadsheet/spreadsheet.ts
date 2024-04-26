@@ -6,4 +6,4 @@ const workbook = getWorkbook(SPREAD_SHEET); // SPREAD_SHEET
 
 // worksheet
 //// SPREAD_SHEET
-const weorksheet = getWorksheet(workbook, "シート1");
+const worksheet = getWorksheet(workbook, "シート1");
